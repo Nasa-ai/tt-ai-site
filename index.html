@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIK TOK AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .section-padding {
+            scroll-margin-top: 5rem;
+            padding-top: 2rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-100">
+    <nav class="sticky top-0 bg-gray-900 text-white p-4 z-50">
+        <div class="container mx-auto flex justify-between">
+            <button class="text-white bg-transparent hover:bg-gray-700 px-3 py-2 rounded" onclick="scrollToSection('main')">Main</button>
+            <button class="text-white bg-transparent hover:bg-gray-700 px-3 py-2 rounded" onclick="scrollToSection('privacy')">Privacy Policy</button>
+            <button class="text-white bg-transparent hover:bg-gray-700 px-3 py-2 rounded" onclick="scrollToSection('terms')">Terms of Service</button>
+            <button class="text-white bg-transparent hover:bg-gray-700 px-3 py-2 rounded" onclick="scrollToSection('contacts')">Contacts</button>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <header id="main" class="section-padding">
+            <h1 class="text-4xl font-bold text-pink-600 mb-4">TIK TOK AI</h1>
+        </header>
+
+        <main>
+            <section class="mb-12 section-padding">
+                <p class="text-gray-700">
+                    This application script automatically replies to user comments in TikTok live streams. When viewers leave comments with a specific keyword, the script sends the comment text to a language model for analysis. If a question is detected in the comment, the model formulates a short response of up to 100 characters and returns it, after which the script posts the response in the live chat. This process enables quick responses to inquiries and maintains real-time interaction with the audience.
+                </p>
+            </section>
+
+            <section id="privacy" class="mb-12 section-padding">
+                <h2 class="text-3xl font-bold text-pink-600 mb-4">Privacy Policy</h2>
+                <!-- Содержимое раздела Privacy Policy -->
+            </section>
+
+            <section id="terms" class="mb-12 section-padding">
+                <h2 class="text-3xl font-bold text-pink-600 mb-4">Terms of Service</h2>
+                <!-- Содержимое раздела Terms of Service -->
+            </section>
+        </main>
+
+        <footer id="contacts" class="section-padding">
+            <h2 class="text-3xl font-bold text-pink-600 mb-4">Contact Information</h2>
+            <p class="text-gray-700">If you have questions regarding this Privacy Policy, Terms of Service, or data handling, please contact us at: <a href="mailto:soulstream2012@gmail.com" class="text-blue-600 hover:underline">soulstream2012@gmail.com</a></p>
+        </footer>
+    </div>
+
+    <script>
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
